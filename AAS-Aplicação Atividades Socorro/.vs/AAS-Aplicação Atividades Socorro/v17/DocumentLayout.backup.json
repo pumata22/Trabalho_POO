@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\tipoocorrencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\tipoocorrencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\ocorrencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\ocorrencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\for\u00E7asarmadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\for\u00E7asarmadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\prote\u00E7\u00E3ocivil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\prote\u00E7\u00E3ocivil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\inem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\inem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|c:\\users\\hp\\onedrive\\desktop\\ipca\\leim\\2\u00BAano_1\u00BAsemestre\\programa\u00E7\u00E3o orientada a objetos\\poo\\trabalho\\aas-aplica\u00E7\u00E3o atividades socorro\\aas-aplica\u00E7\u00E3o atividades socorro\\bombeiros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}|AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro.csproj|solutionrelative:aas-aplica\u00E7\u00E3o atividades socorro\\bombeiros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Program.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Program.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:32:57.451Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TipoOcorrencia.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\TipoOcorrencia.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\TipoOcorrencia.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\TipoOcorrencia.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\TipoOcorrencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:50:06.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ocorrencias.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Ocorrencias.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Ocorrencias.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Ocorrencias.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Ocorrencias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:41:27.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Veiculos.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Veiculos.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Veiculos.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Veiculos.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Veiculos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:41:06.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pessoas.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Pessoas.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Pessoas.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Pessoas.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Pessoas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:36:27.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "For\u00E7asArmadas.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\For\u00E7asArmadas.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\For\u00E7asArmadas.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\For\u00E7asArmadas.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\For\u00E7asArmadas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:35:46.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Prote\u00E7\u00E3oCivil.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Prote\u00E7\u00E3oCivil.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Prote\u00E7\u00E3oCivil.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Prote\u00E7\u00E3oCivil.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Prote\u00E7\u00E3oCivil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:35:29.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Inem.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Inem.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Inem.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Inem.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Inem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:34:08.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Bombeiros.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Bombeiros.cs",
+              "RelativeDocumentMoniker": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Bombeiros.cs",
+              "ToolTip": "C:\\Users\\Hp\\OneDrive\\Desktop\\ipca\\LEIM\\2\u00BAAno_1\u00BASemestre\\Programa\u00E7\u00E3o Orientada a Objetos\\POO\\trabalho\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Bombeiros.cs",
+              "RelativeToolTip": "AAS-Aplica\u00E7\u00E3o Atividades Socorro\\Bombeiros.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:33:52.153Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

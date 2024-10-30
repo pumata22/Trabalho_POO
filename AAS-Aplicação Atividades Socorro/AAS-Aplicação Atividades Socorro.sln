@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAS-Aplicação Atividades Socorro", "AAS-Aplicação Atividades Socorro\AAS-Aplicação Atividades Socorro.csproj", "{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CECA64-EC0C-456B-BFAB-B6EF4BC556DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C78227D-A5D9-49F2-8096-D79AE2662F8D}
+	EndGlobalSection
+EndGlobal
