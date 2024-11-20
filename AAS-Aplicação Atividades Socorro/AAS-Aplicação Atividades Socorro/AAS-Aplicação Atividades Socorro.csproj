@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstrataVeiculos.cs" />
     <Compile Include="Bombeiros.cs" />
-    <Compile Include="ForçasArmadas.cs" />
+    <Compile Include="ForcasArmadas.cs" />
     <Compile Include="Inem.cs" />
-    <Compile Include="Ocorrencias.cs" />
+    <Compile Include="IVeiculos.cs" />
+    <Compile Include="Ocorrencia.cs" />
     <Compile Include="Pessoas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,2 +1,4 @@
 C:\Users\Hp\OneDrive\Desktop\ipca\LEIM\2ºAno_1ºSemestre\Programação Orientada a Objetos\POO\trabalho\AAS-Aplicação Atividades Socorro\AAS-Aplicação Atividades Socorro\obj\Debug\AAS-Aplicação Atividades Socorro.csproj.AssemblyReference.cache
 C:\Users\Hp\OneDrive\Desktop\ipca\LEIM\2ºAno_1ºSemestre\Programação Orientada a Objetos\POO\trabalho\AAS-Aplicação Atividades Socorro\AAS-Aplicação Atividades Socorro\obj\Debug\AAS-Aplicação Atividades Socorro.csproj.CoreCompileInputs.cache
+C:\Users\Hp\OneDrive\Desktop\ipca\LEIM\2ºAno_1ºSemestre\Programação Orientada a Objetos\Trabalho\AAS-Aplicação Atividades Socorro\AAS-Aplicação Atividades Socorro\obj\Debug\AAS-Aplicação Atividades Socorro.csproj.AssemblyReference.cache
+C:\Users\Hp\OneDrive\Desktop\ipca\LEIM\2ºAno_1ºSemestre\Programação Orientada a Objetos\Trabalho\AAS-Aplicação Atividades Socorro\AAS-Aplicação Atividades Socorro\obj\Debug\AAS-Aplicação Atividades Socorro.csproj.CoreCompileInputs.cache

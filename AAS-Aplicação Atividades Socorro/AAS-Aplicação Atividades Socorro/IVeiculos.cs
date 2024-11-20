@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Ignore Spelling: AAS
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace AAS
 {
-    public class ForçasArmadas
+    internal interface IVeiculos
     {
+    void Veiculos();
+
     }
 }
