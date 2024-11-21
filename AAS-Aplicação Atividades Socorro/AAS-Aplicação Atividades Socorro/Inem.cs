@@ -11,8 +11,8 @@ namespace AAS
     public class Inem
     {
         #region Atributos
-        public int qtdMedicos;
-        public int qtdEnfermeiros;
+        private int qtdMedicos;
+        private int qtdEnfermeiros;
         #endregion
 
         #region Construtores 
@@ -30,6 +30,31 @@ namespace AAS
         #region Destrutor
         ~Inem()
         {
+        }
+        #endregion
+
+        #region Encapsulamento
+        public int QtdMedicos 
+        {
+            get 
+            {
+            return this.qtdMedicos;
+            }
+            set 
+            {
+            this.qtdMedicos= value;
+            }
+        }
+        public int QtdEnfermeiros 
+        {
+            get 
+            {
+                return this.qtdEnfermeiros;
+            }
+            set 
+            {
+            this.qtdEnfermeiros= value;
+            }
         }
         #endregion
     }

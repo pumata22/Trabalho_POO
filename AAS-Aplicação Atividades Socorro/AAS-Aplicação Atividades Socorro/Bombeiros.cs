@@ -8,18 +8,86 @@ using System.Threading.Tasks;
 
 namespace AAS
 {
-    public class Bombeiros : Pessoas
+    public class Bombeiros : Pessoa
     {
         #region Atributos
-        public int idQuartel;
-        public string moradaQuartel;
-        public int numeroIdBombeiro;
-        public string categoriaBombeiro;
-        public double horasAlerta, horasDisponivel;
-        public int kmsSaida, kmsChegada;
-        public string areaAtuacao;
+        private int idQuartel;
+        private string moradaQuartel;
+        private string areaAtuacao;
+        private int contacto;
 
         Veiculos veiculo = new Veiculos();
         #endregion
+
+        #region Construtores
+        public Bombeiros() 
+        {
+        
+        }
+
+        public Bombeiros(int idQuartel,string moradaQuartel, string areaAtuacao, int contacto)
+        {
+        this.idQuartel = idQuartel; 
+        this.moradaQuartel = moradaQuartel;
+        this.areaAtuacao = areaAtuacao;
+        this.contacto = contacto;
+        }
+        #endregion
+
+        #region Destrutor
+        ~Bombeiros() 
+        {
+        
+        }
+        #endregion
+
+        #region Encapsulamento
+        private int IdQuartel
+        {
+            get 
+            {
+            return this.idQuartel;
+            }
+            set
+            {
+                this.idQuartel = value;
+            }
+        }
+        private string MoradaQuartel
+        {
+            get 
+            {
+                return this.moradaQuartel; 
+            }
+            set 
+            {
+            this.moradaQuartel= value;
+            }
+        }
+        private string AreaAtuacao
+        {
+            get
+            {
+                return this.areaAtuacao;
+            }
+            set
+            {
+                this.areaAtuacao = value;
+            }
+        }
+        private int Contacto
+        {
+            get 
+            {
+                return this.contacto;
+            }
+            set 
+            { 
+                this.contacto = value;
+            }
+        }
+
+        #endregion
+
     }
 }

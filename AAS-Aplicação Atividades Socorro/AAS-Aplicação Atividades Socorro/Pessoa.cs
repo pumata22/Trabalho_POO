@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AAS
 {
-    public class Pessoas
+    public class Pessoa
     {
         #region Atributos
         private int nOperacional;
@@ -17,12 +17,12 @@ namespace AAS
         private int moradaPessoa;
         #endregion
 
-        #region construtores
-        public Pessoas()
+        #region Construtores
+        public Pessoa()
         {
         }
 
-        public Pessoas(int nOperacionalPar, string nomePar, int idadePar, int moradaPessoaPar)
+        public Pessoa(int nOperacionalPar, string nomePar, int idadePar, int moradaPessoaPar)
         {
             this.nOperacional = nOperacionalPar;
             this.nome = nomePar;
@@ -33,7 +33,7 @@ namespace AAS
         #endregion
 
         #region destrutor
-        ~Pessoas()
+        ~Pessoa()
         {
         }
 

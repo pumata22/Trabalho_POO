@@ -12,9 +12,9 @@ namespace AAS
     {
         #region Atributos
 
-        public string TipoForca;
-        public string moradaBase;//base ou esquadra da policia por exemplo
-        public string areaAtuacao;
+        private string tipoForca;
+        private string moradaBase;//base ou esquadra da policia por exemplo
+        private string areaAtuacao;
 
         Veiculos veiculo = new Veiculos();
 
@@ -32,7 +32,47 @@ namespace AAS
 
         #endregion
 
-        #region Encapsulamento
+        #region Destrutor
+        ~ForcasArmadas() 
+        {
+        }
+        #endregion
 
+        #region Encapsulamento
+        public string TipoForca 
+        {
+            get 
+            {
+                return this.tipoForca;
+            }
+            set 
+            {
+            this.tipoForca = value;
+            }
+        }
+        public string MoradaBase
+        {
+            get
+            {
+                return this.moradaBase;
+            }
+            set 
+            {
+                this.moradaBase = value;
+            }
+        }
+        public string AreaAtuacao 
+        {
+            get 
+            {
+            return this.areaAtuacao;
+            }
+            set 
+            {
+            this.areaAtuacao = value;
+            }
+        }
+        #endregion
     }
 }
+ 
