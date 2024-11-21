@@ -11,7 +11,10 @@ namespace AAS
     public abstract class AbstrataVeiculos
     {
 
-        public abstract void Transporte();
+         public virtual void Transporte()
+        {    
+         Console.WriteLine("Veiculos tem um meio de transporte");
+        }
         //public  void Mover();
 
         public virtual void Sigla()
