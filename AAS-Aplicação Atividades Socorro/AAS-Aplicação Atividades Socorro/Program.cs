@@ -24,6 +24,8 @@ namespace AAS
                 if (escolha == 1) //emergencia médica
                 {
                     Console.WriteLine("Emergencia");
+                     Ocorrencia ocorrencia= new Ocorrencia(morada, veiculos, observacoes,
+                           nVitimas, idade, nCodu, identifacadorTipoEmergencia, nOperacionais, pessoa)
                 }
                 else if (escolha == 2) //acidente
                 {
