@@ -36,7 +36,7 @@ namespace AAS
 
         //Construtor emergencias medicas e agressao
         public Ocorrencia(string morada, string veiculos, string observacoes,
-                          int nVitimas, int idade, int nCodu, int identifacadorTipoEmergencia, int nOperacionais, Pessoa pessoa)
+                          int nVitimas, int idade, int nCodu, int identificadorTipoEmergencia, int nOperacionais, Pessoa pessoa)
         {
             this.morada = morada;
             this.veiculos = veiculos;
@@ -44,13 +44,13 @@ namespace AAS
             this.nVitimas = nVitimas;
             this.idade = idade;
             this.nCodu = nCodu;
-            this.identificadorTipoEmergencia = identifacadorTipoEmergencia;
+            this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.pessoa = pessoa;
         }
 
         //Construtor acidente
         public Ocorrencia(string morada, string veiculos, string observacoes,
-                          int nVitimas, int nCodu, int identifacadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais,
+                          int nVitimas, int nCodu, int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais,
                           Pessoa pessoa)
         {
             this.morada = morada;
@@ -58,7 +58,7 @@ namespace AAS
             this.observacoes = observacoes;
             this.nVitimas = nVitimas;
             this.nCodu = nCodu;
-            this.identificadorTipoEmergencia = identifacadorTipoEmergencia;
+            this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
             this.pessoa = pessoa;
@@ -66,38 +66,38 @@ namespace AAS
 
         //Construtor incendio urbano e industrial
         public Ocorrencia(string morada, string veiculos, string observacoes,
-                         int nVitimas, int identifacadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais)
+                         int nVitimas, int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais)
         {
             this.morada = morada;
             this.veiculos = veiculos;
             this.observacoes = observacoes;
             this.nVitimas = nVitimas;
-            this.identificadorTipoEmergencia = identifacadorTipoEmergencia;
+            this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
         }
 
         //Construtor incendio florestal
         public Ocorrencia(string morada, string veiculos, string observacoes,
-                         int identifacadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais, double areaArdida)
+                         int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais, double areaArdida)
         {
             this.morada = morada;
             this.veiculos = veiculos;
             this.observacoes = observacoes;
-            this.identificadorTipoEmergencia = identifacadorTipoEmergencia;
+            this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
             this.areaArdida = areaArdida;
         }
 
         //Construtor assalto
-        public Ocorrencia(string morada, string veiculos, string observacoes, int identifacadorTipoEmergencia, int nOperacionais,
+        public Ocorrencia(string morada, string veiculos, string observacoes, int identificadorTipoEmergencia, int nOperacionais,
                           int coordenadas1, int coordenadas2)
         {
             this.morada = morada;
             this.veiculos = veiculos;
             this.observacoes = observacoes;
-            this.identificadorTipoEmergencia = identifacadorTipoEmergencia;
+            this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.nOperacionais = nOperacionais;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
