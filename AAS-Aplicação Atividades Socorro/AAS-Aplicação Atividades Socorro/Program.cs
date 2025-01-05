@@ -93,30 +93,65 @@ namespace AAS
                 case "2":
                     Console.WriteLine("Acidente");
 
+                    Console.WriteLine("Qual o local?");
+                    morada = Console.ReadLine();
+
+                    Console.WriteLine("Quantas vitimas?");
+                    nVitimas = int.Parse(Console.ReadLine());
+
                     Pessoa pessoa1 = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
                     Ocorrencia acidente = new Ocorrencia( morada,  veiculos,  observacoes,
                   nVitimas, nCodu,  identificadorTipoEmergencia,  coordenadas1,  coordenadas2,  nOperacionais,
                   pessoa1);
                     ocorrenciaList.Add(acidente);
                     break;
+
                 case "3":
+                    Console.WriteLine("Qual o local?");
+                    morada = Console.ReadLine();
+
+                    Console.WriteLine("Quantas vitimas?");
+                    nVitimas = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Observacoes");
+                    observacoes = Console.ReadLine();
+
                     Console.WriteLine("Incêndio Urbano");
                     Ocorrencia urbano = new Ocorrencia(morada, veiculos, observacoes,
                           nVitimas, identificadorTipoEmergencia, coordenadas1, coordenadas2, nOperacionais);
                     ocorrenciaList.Add(urbano);
                     break;
+
                 case "4":
                     Console.WriteLine("Incêndio Florestal");
+
+                    Console.WriteLine("Qual o local?");
+                    morada = Console.ReadLine();
+
+                    Console.WriteLine("Observacoes");
+                    observacoes = Console.ReadLine();
+
                     Ocorrencia florestal = new Ocorrencia(morada, veiculos, observacoes,
                         identificadorTipoEmergencia, coordenadas1, coordenadas2, nOperacionais, areaArdida);
                     ocorrenciaList.Add(florestal);
                         break;
+
                 case "5":
+                    Console.WriteLine("Qual o local?");
+                    morada = Console.ReadLine();
+
+                    Console.WriteLine("Quantas vitimas?");
+                    nVitimas = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Observacoes");
+                    observacoes = Console.ReadLine();
+
                     Console.WriteLine("Incêndio Industrial");
                     Ocorrencia industrial = new Ocorrencia(morada, veiculos, observacoes,
                          nVitimas, identificadorTipoEmergencia, coordenadas1, coordenadas2, nOperacionais);
                     ocorrenciaList.Add(industrial);
                     break;
+
                 case "6":
                     Console.WriteLine("Assalto");
                     Ocorrencia assalto = new Ocorrencia(morada, veiculos, observacoes, identificadorTipoEmergencia,
@@ -125,6 +160,27 @@ namespace AAS
                     break;
                 case "7":
                     Console.WriteLine("Agressão");
+                    Console.WriteLine("Emergência Médica");
+
+                    Console.WriteLine("Qual o local?");
+                    morada = Console.ReadLine();
+
+                    Console.WriteLine("Quantas vitimas?");
+                    nVitimas = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Idade aproximada?");
+                    idade = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Sexo(M/F)");
+                    escolhaSexo = char.Parse(Console.ReadLine());
+                    if (escolhaSexo == 'M')
+                    {
+                        sexo = "Masculino";
+                    }
+                    else sexo = "Feminino";
+
+                    Console.WriteLine("Observacoes");
+                    observacoes = Console.ReadLine();
 
                     Pessoa pessoa7 = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
                     Ocorrencia agressao = new Ocorrencia(morada, veiculos, observacoes,
