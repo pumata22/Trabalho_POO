@@ -78,10 +78,6 @@ namespace AAS
         {
             //Implementaçao
         }
-        public override void Sigla()
-        {
-            //Implementaçao
-        }
         public void TipoVeiculos()
         {
 

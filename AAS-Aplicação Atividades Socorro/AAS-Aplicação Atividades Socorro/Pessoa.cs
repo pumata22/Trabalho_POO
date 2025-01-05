@@ -14,22 +14,36 @@ namespace AAS
         private int nOperacional;
         private string nome;
         private int idade;
-        private int moradaPessoa;
+        private string moradaPessoa;
+        private string sexo;
+        private string dataNascimento;
         #endregion
-        //ghjf
+
         #region Construtores
         public Pessoa()
         {
         }
 
-        public Pessoa(int nOperacionalPar, string nomePar, int idadePar, int moradaPessoaPar)
+        //operacionais
+        public Pessoa(int nOperacionalPar, string nomePar, string sexo, int idadePar, string dataNascimento, string moradaPessoaPar)
         {
             this.nOperacional = nOperacionalPar;
             this.nome = nomePar;
             this.idade = idadePar;
             this.moradaPessoa = moradaPessoaPar;
+            this.sexo = sexo;
+            this.dataNascimento = dataNascimento;
         }
 
+        //civis
+        public Pessoa(string nome, int idade,string dataNascimento, string sexo, string moradaPessoa) 
+        {
+        this.nome=nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.dataNascimento = dataNascimento;
+        this.moradaPessoa=moradaPessoa;
+        }
         #endregion
 
         #region destrutor
@@ -73,7 +87,7 @@ namespace AAS
                 this.idade = value;
             }
         }
-        public int MoradaPessoa
+        public string MoradaPessoa
         {
             get
             {
@@ -84,7 +98,28 @@ namespace AAS
                 this.moradaPessoa = value;
             }
         }
-
+        public string Sexo
+        {
+            get 
+            {
+                return this.sexo;
+            }
+            set
+            { 
+            this.sexo = value;
+            }
+        }
+        public string DataNascimento
+        {
+            get 
+            {
+                return this.dataNascimento;
+            }
+            set 
+            { 
+                this.dataNascimento = value;
+            }
+        }
         #endregion
     }
 }

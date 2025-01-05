@@ -10,29 +10,45 @@ namespace AAS
 {
     class Program
     {
-            #region Variáveis
-            private string morada;
-            private string veiculos;
-            private string observacoes;
-            private int data;
-            private int idade;
-            private int nVitimas;
-            private int nCodu;
-            private int identificadorTipoEmergencia;
-            private int nVeiculos;
-            private int coordenadas1, coordenadas2;
-            private int nOperacionais;
-            private double horaAlerta, horaFecho;
-            private double areaArdida;
-            #endregion
+        #region Variáveis
+        private string morada;
+        private string nome;
+        private string moradaPessoa;
+        private string veiculos;
+        private string observacoes;
+        private string dataNascimento;
+        private string sexo;
+        private string moradaQuartel;
+        private string areaAtuacao;
+        private string tipoForca;
+        private string moradaBase;
+        private string sigla;
+        private string categoria;
+        private int lugares;
+        private int data;
+        private int idade;
+        private int nVitimas;
+        private int nCodu=0;
+        private int identificadorTipoEmergencia;
+        private int nVeiculos;
+        private int coordenadas1, coordenadas2;
+        private int nOperacionais;
+        private int contacto;
+        private int idQuartel;
+        private int IdBasePC;//id  base protecao civil
+        private int qtdMedicos;
+        private int qtdEnfermeiros;
+        private double horaAlerta, horaFecho;
+        private double areaArdida;
+        #endregion
 
             List<Ocorrencia> ocorrenciaList = new List<Ocorrencia>();
-            Pessoa pessoa = new Pessoa();
 
         public List<Ocorrencia> AddOcorrencias()
         {
             string escolha;
-            Console.Write("Qual o tipo da ocorrência?");
+            char escolhaSexo;
+            Console.WriteLine("Qual o tipo da ocorrência?");
             Console.WriteLine("1-Emergência Médica");
             Console.WriteLine("2-Acidente");
             Console.WriteLine("3-Incêndio Urbano");
@@ -47,15 +63,40 @@ namespace AAS
             {
                 case "1":
                     Console.WriteLine("Emergência Médica");
+
+                    Console.WriteLine("Qual o local?");
+                    morada = Console.ReadLine();
+
+                    Console.WriteLine("Quantas vitimas?");
+                    nVitimas = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Idade aproximada?");
+                    idade = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Sexo(M/F)");
+                    escolhaSexo = char.Parse(Console.ReadLine());
+                    if (escolhaSexo == 'M')
+                    {
+                     sexo = "Masculino";
+                    }
+                    else sexo = "Feminino";
+
+                    Console.WriteLine("Observacoes");
+                    observacoes = Console.ReadLine();
+
+                    Pessoa pessoa = new Pessoa( nome, idade, dataNascimento, sexo, moradaPessoa);
+
                     Ocorrencia medica = new Ocorrencia(morada, veiculos, observacoes,
                         nVitimas, idade, nCodu, identificadorTipoEmergencia, nOperacionais, pessoa);
                     ocorrenciaList.Add(medica);
                     break;
                 case "2":
                     Console.WriteLine("Acidente");
+
+                    Pessoa pessoa1 = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
                     Ocorrencia acidente = new Ocorrencia( morada,  veiculos,  observacoes,
                   nVitimas, nCodu,  identificadorTipoEmergencia,  coordenadas1,  coordenadas2,  nOperacionais,
-                  pessoa);
+                  pessoa1);
                     ocorrenciaList.Add(acidente);
                     break;
                 case "3":
@@ -84,8 +125,10 @@ namespace AAS
                     break;
                 case "7":
                     Console.WriteLine("Agressão");
+
+                    Pessoa pessoa7 = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
                     Ocorrencia agressao = new Ocorrencia(morada, veiculos, observacoes,
-                       nVitimas, idade, nCodu, identificadorTipoEmergencia, nOperacionais, pessoa);
+                       nVitimas, idade, nCodu, identificadorTipoEmergencia, nOperacionais, pessoa7);
                     ocorrenciaList.Add(agressao);
                     break;
                 default:
