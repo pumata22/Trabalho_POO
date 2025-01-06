@@ -24,9 +24,10 @@ namespace AAS
         {
         }
 
-        public ForcasArmadas(string TipoForca, string moradaBase)
+        public ForcasArmadas(string tipoForca, string moradaBase)
         {
-        
+        this.tipoForca = tipoForca;
+        this.moradaBase = moradaBase;
         }
 
         #endregion

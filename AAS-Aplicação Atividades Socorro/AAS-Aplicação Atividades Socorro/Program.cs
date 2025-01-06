@@ -194,6 +194,12 @@ namespace AAS
         public void Assalto()
         {
             Console.WriteLine("Assalto");
+            nOcorrencia++;
+            Console.WriteLine("Qual o local?");
+            morada = Console.ReadLine();
+            Console.WriteLine("Observacoes");
+            observacoes = Console.ReadLine();
+
             Ocorrencia assalto = new Ocorrencia(morada, veiculos, observacoes, 6, nOcorrencia,
                 nOperacionais, coordenadas1, coordenadas2);
             ocorrenciaList.Add(assalto);
