@@ -293,5 +293,14 @@ namespace AAS
         }
         #endregion
 
+        public override string ToString()
+        {
+            return $"Tipo: {IdentificadorTipoEmergencia}\n" +
+                   $"Local: {Morada}\n" +
+                   $"Número de Vítimas: {NVitimas}\n" +
+                   $"Veículos Envolvidos: {Veiculos}\n" +
+                   $"Operacionais Envolvidos: {NOperacionais}\n" +
+                   $"Observações: {Observacoes}\n";
+        }
     }
 }

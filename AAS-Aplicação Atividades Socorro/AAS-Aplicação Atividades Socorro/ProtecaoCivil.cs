@@ -11,8 +11,7 @@ namespace AAS
     public class ProtecaoCivil
     {
         #region Atributos
-        private int IdBasePC;//id  base protecao civil
-        private string moradaBase;
+        private string nome;
         private string area;
         Veiculos veiculo = new Veiculos();
 
@@ -24,13 +23,11 @@ namespace AAS
 
         }
 
-        public ProtecaoCivil(int IdBasePC_par, string moradaBase_par, string area_par, Veiculos veiculo_par)
+        public ProtecaoCivil(string nome_par, string area_par)
         {
 
-            this.IdBasePC = IdBasePC_par;
-            this.moradaBase = moradaBase_par;
+            this.nome = nome_par;
             this.area = area_par;
-            this.veiculo = veiculo_par;
         }
 
         #endregion
@@ -43,29 +40,16 @@ namespace AAS
         #endregion
 
         #region Encapsulamento
-        public int IDBasePC
+        public string Nome
         {
 
             get
             {
-                return this.IdBasePC;
+                return this.nome;
             }
             set
             {
-                this.IdBasePC = value;
-            }
-        }
-
-        public string MoradaBase
-        {
-
-            get
-            {
-                return this.moradaBase;
-            }
-            set
-            {
-                this.moradaBase = value;
+                this.nome = value;
             }
         }
 

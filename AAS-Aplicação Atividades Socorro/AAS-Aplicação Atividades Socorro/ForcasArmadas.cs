@@ -14,7 +14,6 @@ namespace AAS
 
         private string tipoForca;
         private string moradaBase;//base ou esquadra da policia por exemplo
-        private string areaAtuacao;
 
         Veiculos veiculo = new Veiculos();
 
@@ -25,7 +24,7 @@ namespace AAS
         {
         }
 
-        public ForcasArmadas(string TipoForca, string moradaBase, string areaAtuacao)
+        public ForcasArmadas(string TipoForca, string moradaBase)
         {
         
         }
@@ -59,17 +58,6 @@ namespace AAS
             set 
             {
                 this.moradaBase = value;
-            }
-        }
-        public string AreaAtuacao 
-        {
-            get 
-            {
-            return this.areaAtuacao;
-            }
-            set 
-            {
-            this.areaAtuacao = value;
             }
         }
         #endregion

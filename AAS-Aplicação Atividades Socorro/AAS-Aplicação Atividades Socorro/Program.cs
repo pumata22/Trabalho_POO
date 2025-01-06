@@ -18,7 +18,6 @@ namespace AAS
         private string dataNascimento;
         private string sexo;
         private string moradaQuartel;
-        private string areaAtuacao;
         private string tipoForca;
         private string moradaBase;
         private string sigla;
@@ -34,14 +33,59 @@ namespace AAS
         private int nOperacionais;
         private int contacto;
         private int idQuartel;
-        private int IdBasePC;//id  base protecao civil
         private int qtdMedicos;
         private int qtdEnfermeiros;
+        private int qtdMeios;
         private double horaAlerta, horaFecho;
         private double areaArdida;
         #endregion
 
         List<Ocorrencia> ocorrenciaList = new List<Ocorrencia>();
+
+        List<Bombeiros> bombeirosList = new List<Bombeiros>();
+        List<ForcasArmadas> forcasList = new List<ForcasArmadas>();
+        List<Inem> inemList = new List<Inem>();  
+        List<ProtecaoCivil> pcList= new List<ProtecaoCivil>();
+        public List<Bombeiros> AddBombeiros()
+        {
+            Bombeiros bombeiros = new Bombeiros(0316, "Avenida Carlos Bacelar 106, V.N.Famalicao", 252330200,"B.V.Famalicenses");
+            Bombeiros bombeiros1 = new Bombeiros(0308, "Av. Rebelo Mesquita 136, V.N.Famalicao", 252301112, "B.V.Famalicao");
+            Bombeiros bombeiros2 = new Bombeiros(0319, "Avenida Cidade Abreu e Lima, Riba de Ave,", 252900200, "B.V.Riba de Ave");
+            bombeirosList.Add(bombeiros);
+            bombeirosList.Add(bombeiros1);
+            bombeirosList.Add(bombeiros2);
+            return bombeirosList;
+        }
+        public List<ForcasArmadas> AddForcas() 
+        {
+            ForcasArmadas forcasArmadas = new ForcasArmadas("PSP Famalicao", "R.António Sérgio, V.N.Famalicao");
+            ForcasArmadas forcasArmadas1 = new ForcasArmadas("PSP Barcelos", "Av. Dr. Sidónio Pais 537, Barcelos");
+            ForcasArmadas forcasArmadas2 = new ForcasArmadas("GNR Famalicao", " R. Vieira da Silva 116, V.N.Famalicão");
+            forcasList.Add(forcasArmadas);
+            forcasList.Add(forcasArmadas1);
+            forcasList.Add(forcasArmadas2);
+            return forcasList;
+        }
+        public List<Inem> AddInem() 
+        {
+            Inem inem = new Inem(1, 1, 1, "Famalicao");
+            Inem inem1 = new Inem(1, 1, 1, "Barcelos");
+            Inem inem2 = new Inem(1, 1, 1, "Braga");
+            inemList.Add(inem);
+            inemList.Add(inem1);
+            inemList.Add(inem2);
+            return inemList;
+        }
+        public List<ProtecaoCivil> AddPC() 
+        {
+            ProtecaoCivil pCivil = new ProtecaoCivil("Protecao Civil Braga", "Braga");
+            ProtecaoCivil pCivil1 = new ProtecaoCivil("Protecao Civil Famalicao", "Famalicao");
+            ProtecaoCivil pCivil2 = new ProtecaoCivil("Protecao Civil Barcelos", "Barcelos");
+            pcList.Add(pCivil);
+            pcList.Add(pCivil1);
+            pcList.Add(pCivil2);
+            return pcList;
+        }
 
         public void EmergenciaMedica() {
 
@@ -71,7 +115,7 @@ namespace AAS
             Pessoa pessoa = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
 
             Ocorrencia medica = new Ocorrencia(morada, veiculos, observacoes,
-                nVitimas, idade, nCodu, identificadorTipoEmergencia, nOperacionais, pessoa);
+                nVitimas, idade, nCodu, 1, nOperacionais, pessoa);
             ocorrenciaList.Add(medica);
             MENU();
         }
@@ -88,7 +132,7 @@ namespace AAS
 
             Pessoa pessoa1 = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
             Ocorrencia acidente = new Ocorrencia(morada, veiculos, observacoes,
-          nVitimas, nCodu, identificadorTipoEmergencia, coordenadas1, coordenadas2, nOperacionais,
+          nVitimas, nCodu, 2, coordenadas1, coordenadas2, nOperacionais,
           pessoa1);
             ocorrenciaList.Add(acidente);
             MENU();
@@ -106,7 +150,7 @@ namespace AAS
 
             Console.WriteLine("Incêndio Urbano");
             Ocorrencia urbano = new Ocorrencia(morada, veiculos, observacoes,
-                  nVitimas, identificadorTipoEmergencia, coordenadas1, coordenadas2, nOperacionais);
+                  nVitimas, 3, coordenadas1, coordenadas2, nOperacionais);
             ocorrenciaList.Add(urbano);
             MENU();
         }
@@ -121,7 +165,7 @@ namespace AAS
             observacoes = Console.ReadLine();
 
             Ocorrencia florestal = new Ocorrencia(morada, veiculos, observacoes,
-                identificadorTipoEmergencia, coordenadas1, coordenadas2, nOperacionais, areaArdida);
+                4, coordenadas1, coordenadas2, nOperacionais, areaArdida);
             ocorrenciaList.Add(florestal);
             MENU();
         }
@@ -138,14 +182,14 @@ namespace AAS
 
             Console.WriteLine("Incêndio Industrial");
             Ocorrencia industrial = new Ocorrencia(morada, veiculos, observacoes,
-                 nVitimas, identificadorTipoEmergencia, coordenadas1, coordenadas2, nOperacionais);
+                 nVitimas, 5, coordenadas1, coordenadas2, nOperacionais);
             ocorrenciaList.Add(industrial);
             MENU();
         }
         public void Assalto()
         {
             Console.WriteLine("Assalto");
-            Ocorrencia assalto = new Ocorrencia(morada, veiculos, observacoes, identificadorTipoEmergencia,
+            Ocorrencia assalto = new Ocorrencia(morada, veiculos, observacoes, 6,
                 nOperacionais, coordenadas1, coordenadas2);
             ocorrenciaList.Add(assalto);
             MENU();
@@ -180,11 +224,30 @@ namespace AAS
 
             Pessoa pessoa7 = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
             Ocorrencia agressao = new Ocorrencia(morada, veiculos, observacoes,
-               nVitimas, idade, nCodu, identificadorTipoEmergencia, nOperacionais, pessoa7);
+               nVitimas, idade, nCodu, 7, nOperacionais, pessoa7);
             ocorrenciaList.Add(agressao);
             MENU();
         }
-        public void MENU()
+        public void MostrarOcorrenciasAtivas()
+        {
+            Console.WriteLine("\nOcorrências Ativas");
+            if (ocorrenciaList.Count == 0)
+            {
+                Console.WriteLine("Nenhuma ocorrência ativa no momento.");
+                MENU();
+            }
+
+            foreach (var ocorrencia in ocorrenciaList)
+            {
+                Console.WriteLine(ocorrencia.ToString());
+                Console.WriteLine("------------------------------------");
+            }
+
+            Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
+            Console.ReadKey();
+            MENU();
+        }
+            public void MENU()
         {
             string escolha;
             Console.WriteLine("Qual o tipo da ocorrência?");
@@ -196,6 +259,7 @@ namespace AAS
             Console.WriteLine("5-Incêndio Industrial");
             Console.WriteLine("6-Assalto");
             Console.WriteLine("7-Agressão");
+            Console.WriteLine("8-Ocorrencias Ativas");
             Console.WriteLine();
             escolha = Console.ReadLine();
 
@@ -230,6 +294,9 @@ namespace AAS
                 case "7":
                     Agressao();
                     break;
+                case "8":
+                    MostrarOcorrenciasAtivas();
+                    break;
 
                 default:
                     Console.WriteLine("Opção inválida.");
@@ -257,11 +324,12 @@ namespace AAS
                 "Agressao"
             };
         }
-
         static void Main()
         {
             Program p = new Program();
             p.AddOcorrencias();
+
+
         }
     }
 }

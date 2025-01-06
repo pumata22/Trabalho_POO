@@ -11,42 +11,41 @@ namespace AAS
     public class Bombeiros : Pessoa
     {
         #region Atributos
+        private string nomQuartel;
         private int idQuartel;
         private string moradaQuartel;
-        private string areaAtuacao;
         private int contacto;
 
         Veiculos veiculo = new Veiculos();
         #endregion
 
         #region Construtores
-        public Bombeiros() 
+        public Bombeiros()
         {
-        
+
         }
 
-        public Bombeiros(int idQuartel,string moradaQuartel, string areaAtuacao, int contacto)
+        public Bombeiros(int idQuartel, string moradaQuartel, int contacto, string nomQuartel)
         {
-        this.idQuartel = idQuartel; 
-        this.moradaQuartel = moradaQuartel;
-        this.areaAtuacao = areaAtuacao;
-        this.contacto = contacto;
+            this.idQuartel = idQuartel;
+            this.moradaQuartel = moradaQuartel;
+            this.contacto = contacto;
         }
         #endregion
 
         #region Destrutor
-        ~Bombeiros() 
+        ~Bombeiros()
         {
-        
+
         }
         #endregion
 
         #region Encapsulamento
         private int IdQuartel
         {
-            get 
+            get
             {
-            return this.idQuartel;
+                return this.idQuartel;
             }
             set
             {
@@ -55,36 +54,38 @@ namespace AAS
         }
         private string MoradaQuartel
         {
-            get 
-            {
-                return this.moradaQuartel; 
-            }
-            set 
-            {
-            this.moradaQuartel= value;
-            }
-        }
-        private string AreaAtuacao
-        {
             get
             {
-                return this.areaAtuacao;
+                return this.moradaQuartel;
             }
             set
             {
-                this.areaAtuacao = value;
+                this.moradaQuartel = value;
             }
         }
         private int Contacto
         {
-            get 
+            get
             {
                 return this.contacto;
             }
-            set 
-            { 
+            set
+            {
                 this.contacto = value;
             }
+        }
+
+        private string NomQuartel 
+        {
+            get 
+            {
+                return this.nomQuartel; 
+            }
+            set
+            { 
+                this.nomQuartel = value;
+            }
+        
         }
 
         #endregion

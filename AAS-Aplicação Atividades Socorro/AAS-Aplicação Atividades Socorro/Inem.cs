@@ -13,6 +13,8 @@ namespace AAS
         #region Atributos
         private int qtdMedicos;
         private int qtdEnfermeiros;
+        private int qtdMeios;
+        private string posicionamento;
         #endregion
 
         #region Construtores 
@@ -20,10 +22,9 @@ namespace AAS
         {
         }
 
-        public Inem(int qtdMedicos, int qtdEnfermeiros)
-        { 
-        this.qtdMedicos = qtdMedicos;
-        this.qtdEnfermeiros = qtdEnfermeiros;
+        public Inem(int qtdMedicos, int qtdEnfermeiros,int qtdMeios, string posicionamento)
+        {
+            this.posicionamento = posicionamento;
         }
         #endregion
 
@@ -34,28 +35,52 @@ namespace AAS
         #endregion
 
         #region Encapsulamento
-        public int QtdMedicos 
+        public string Posicionamento
         {
-            get 
+            get
             {
-            return this.qtdMedicos;
+                return this.posicionamento;
             }
-            set 
+            set
             {
-            this.qtdMedicos= value;
+                this.posicionamento = value;
             }
         }
-        public int QtdEnfermeiros 
+        public int QtdMeios
         {
-            get 
+            get
+            {
+                return this.qtdMeios;
+            }
+            set
+            {
+                this.qtdMeios = value;
+            }
+        }
+        public int QtdMedicos
+        {
+            get
+            {
+                return this.qtdMedicos;
+            }
+            set
+            {
+                this.qtdMedicos = value;
+            }
+        }
+        public int QtdEnfermeiros
+        {
+            get
             {
                 return this.qtdEnfermeiros;
             }
-            set 
+            set
             {
-            this.qtdEnfermeiros= value;
+                this.qtdEnfermeiros = value;
             }
         }
+
+
         #endregion
     }
 }
