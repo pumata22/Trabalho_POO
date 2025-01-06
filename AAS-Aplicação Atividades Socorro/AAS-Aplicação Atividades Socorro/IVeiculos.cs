@@ -10,7 +10,7 @@ namespace AAS
 {
     internal interface IVeiculos
     {
-        void TipoVeiculos();
+        string TipoVeiculos();
 
     }
 }

@@ -74,13 +74,40 @@ namespace AAS
         }
         #endregion
 
-        public override void Transporte()
-        {
-            //Implementaçao
-        }
-        public void TipoVeiculos()
+        public void Transporte(string morada, int numeroDePassageiros)
         {
 
+            if (numeroDePassageiros > lugares)
+            {
+                Console.WriteLine($"Não é possível transportar {numeroDePassageiros} pessoas. O veículo {sigla} tem capacidade para {lugares} pessoas.");
+                return;
+            }
+
+
+            Console.WriteLine($"O veículo {sigla} está em movimento para {morada} e pode transportar {numeroDePassageiros} pessoas.");
+
+
+
+        }
+
+
+
+        public void TipoVeiculos(string marca, string modelo, int ano)
+        {
+
+            Console.WriteLine($"Informações do Veículo:");
+            Console.WriteLine($"Sigla: {this.sigla}");
+            Console.WriteLine($"Categoria: {this.categoria}");
+            Console.WriteLine($"Capacidade: {this.lugares} lugares");
+            Console.WriteLine($"Marca: {marca}");
+            Console.WriteLine($"Modelo: {modelo}");
+            Console.WriteLine($"Ano: {ano}");
+
+        }
+
+        public string TipoVeiculos()
+        {
+            return "carro"; 
         }
     }
 }
