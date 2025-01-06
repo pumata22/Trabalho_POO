@@ -18,7 +18,7 @@ namespace AAS
         private int data;
         private int idade;
         private int nVitimas;
-        private int nCodu;
+        private int nOcorrencia;
         private int identificadorTipoEmergencia;
         private int nVeiculos;
         private int coordenadas1, coordenadas2;
@@ -36,28 +36,28 @@ namespace AAS
 
         //Construtor emergencias medicas e agressao
         public Ocorrencia(string morada, string veiculos, string observacoes,
-                          int nVitimas, int idade, int nCodu, int identificadorTipoEmergencia, int nOperacionais, Pessoa pessoa)
+                          int nVitimas, int idade, int nOcorrencia, int identificadorTipoEmergencia, int nOperacionais, Pessoa pessoa)
         {
             this.morada = morada;
             this.veiculos = veiculos;
             this.observacoes = observacoes;
             this.nVitimas = nVitimas;
             this.idade = idade;
-            this.nCodu = nCodu;
+            this.nOcorrencia = nOcorrencia;
             this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.pessoa = pessoa;
         }
 
         //Construtor acidente
         public Ocorrencia(string morada, string veiculos, string observacoes,
-                          int nVitimas, int nCodu, int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais,
+                          int nVitimas, int nOcorrencia, int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais,
                           Pessoa pessoa)
         {
             this.morada = morada;
             this.veiculos = veiculos;
             this.observacoes = observacoes;
             this.nVitimas = nVitimas;
-            this.nCodu = nCodu;
+            this.nOcorrencia = nOcorrencia;
             this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
@@ -65,25 +65,27 @@ namespace AAS
         }
 
         //Construtor incendio urbano e industrial
-        public Ocorrencia(string morada, string veiculos, string observacoes,
-                         int nVitimas, int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais)
+        public Ocorrencia(string morada, string veiculos, string observacoes, int nOcorrencia,
+        int nVitimas, int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais)
         {
             this.morada = morada;
             this.veiculos = veiculos;
             this.observacoes = observacoes;
             this.nVitimas = nVitimas;
+            this.nOcorrencia= nOcorrencia;
             this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
         }
 
         //Construtor incendio florestal
-        public Ocorrencia(string morada, string veiculos, string observacoes,
+        public Ocorrencia(string morada, string veiculos, string observacoes,int nOcorrencia,
                          int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais, double areaArdida)
         {
             this.morada = morada;
             this.veiculos = veiculos;
             this.observacoes = observacoes;
+            this.nOcorrencia = nOcorrencia;
             this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
@@ -91,7 +93,7 @@ namespace AAS
         }
 
         //Construtor assalto
-        public Ocorrencia(string morada, string veiculos, string observacoes, int identificadorTipoEmergencia, int nOperacionais,
+        public Ocorrencia(string morada, string veiculos, string observacoes, int identificadorTipoEmergencia, int nOperacionais,int nOcorrencia,
                           int coordenadas1, int coordenadas2)
         {
             this.morada = morada;
@@ -101,6 +103,7 @@ namespace AAS
             this.nOperacionais = nOperacionais;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
+            this.nOcorrencia = nOcorrencia;
         }
         #endregion
 
@@ -183,15 +186,15 @@ namespace AAS
             }
         }
 
-        public int NCodu
+        public int NOcorrencia
         {
             get
             {
-                return this.nCodu;
+                return this.nOcorrencia;
             }
             set
             {
-                this.nCodu = value;
+                this.nOcorrencia = value;
             }
         }
 
@@ -296,6 +299,7 @@ namespace AAS
         public override string ToString()
         {
             return $"Tipo: {IdentificadorTipoEmergencia}\n" +
+                   $"Nº Ocorrencia: {NOcorrencia}\n" +
                    $"Local: {Morada}\n" +
                    $"Número de Vítimas: {NVitimas}\n" +
                    $"Veículos Envolvidos: {Veiculos}\n" +
