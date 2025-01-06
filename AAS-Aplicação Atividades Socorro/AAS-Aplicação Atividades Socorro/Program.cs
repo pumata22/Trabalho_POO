@@ -117,6 +117,7 @@ namespace AAS
             Ocorrencia medica = new Ocorrencia(morada, veiculos, observacoes,
                 nVitimas, idade, nCodu, 1, nOperacionais, pessoa);
             ocorrenciaList.Add(medica);
+            Console.Clear();
             MENU();
         }
         public void Acidente()
@@ -135,6 +136,7 @@ namespace AAS
           nVitimas, nCodu, 2, coordenadas1, coordenadas2, nOperacionais,
           pessoa1);
             ocorrenciaList.Add(acidente);
+            Console.Clear();
             MENU();
         }
         public void IncendioUrbano()
@@ -152,6 +154,7 @@ namespace AAS
             Ocorrencia urbano = new Ocorrencia(morada, veiculos, observacoes,
                   nVitimas, 3, coordenadas1, coordenadas2, nOperacionais);
             ocorrenciaList.Add(urbano);
+            Console.Clear();
             MENU();
         }
         public void IncendioFlorestal()
@@ -167,6 +170,7 @@ namespace AAS
             Ocorrencia florestal = new Ocorrencia(morada, veiculos, observacoes,
                 4, coordenadas1, coordenadas2, nOperacionais, areaArdida);
             ocorrenciaList.Add(florestal);
+            Console.Clear();
             MENU();
         }
         public void IncendioIndustrial()
@@ -184,6 +188,7 @@ namespace AAS
             Ocorrencia industrial = new Ocorrencia(morada, veiculos, observacoes,
                  nVitimas, 5, coordenadas1, coordenadas2, nOperacionais);
             ocorrenciaList.Add(industrial);
+            Console.Clear();
             MENU();
         }
         public void Assalto()
@@ -192,6 +197,7 @@ namespace AAS
             Ocorrencia assalto = new Ocorrencia(morada, veiculos, observacoes, 6,
                 nOperacionais, coordenadas1, coordenadas2);
             ocorrenciaList.Add(assalto);
+            Console.Clear();
             MENU();
         }
         public void Agressao()
@@ -226,6 +232,7 @@ namespace AAS
             Ocorrencia agressao = new Ocorrencia(morada, veiculos, observacoes,
                nVitimas, idade, nCodu, 7, nOperacionais, pessoa7);
             ocorrenciaList.Add(agressao);
+            Console.Clear();
             MENU();
         }
         public void MostrarOcorrenciasAtivas()
@@ -234,6 +241,7 @@ namespace AAS
             if (ocorrenciaList.Count == 0)
             {
                 Console.WriteLine("Nenhuma ocorrência ativa no momento.");
+                Console.Clear();
                 MENU();
             }
 
@@ -245,6 +253,7 @@ namespace AAS
 
             Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
             Console.ReadKey();
+            Console.Clear();
             MENU();
         }
             public void MENU()
@@ -262,7 +271,8 @@ namespace AAS
             Console.WriteLine("8-Ocorrencias Ativas");
             Console.WriteLine();
             escolha = Console.ReadLine();
-
+            Console.Clear();
+                
             switch (escolha)
             {
                 
