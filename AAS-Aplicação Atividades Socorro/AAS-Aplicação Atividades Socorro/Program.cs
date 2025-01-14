@@ -241,19 +241,23 @@ namespace AAS
             Console.Clear();
             MENU();
         }
-        public void MostrarOcorrenciasAtivas()
+        public void ExibirOcorrenciasPorTipo(int tipo_ocorrencia)
         {
-            Console.WriteLine("\nOcorrências Ativas");
-            if (ocorrenciaList.Count == 0)
-            {
-                Console.WriteLine("Nenhuma ocorrência ativa no momento.");
-                MENU();
-            }
+            var OTalTipoDeOcorrencia = ocorrenciaList.Where(t => t.IdentificadorTipoEmergencia == tipo_ocorrencia).ToList();
 
-            foreach (var ocorrencia in ocorrenciaList)
+
+            if (OTalTipoDeOcorrencia.Any())
+        {
+            Console.WriteLine($"Ocorrências para o tipo {tipo_ocorrencia}:");
+
+            foreach (var ocorrencia in OTalTipoDeOcorrencia)
             {
                 Console.WriteLine(ocorrencia.ToString());
-                Console.WriteLine("------------------------------------");
+            }
+        }
+            else
+            {
+                Console.WriteLine($"Nenhuma ocorrência encontrada para o tipo {tipo_ocorrencia}.");
             }
 
             Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
@@ -261,7 +265,7 @@ namespace AAS
             Console.Clear();
             MENU();
         }
-        public void MENU()
+         public void MENU()
         {
             string escolha;
             Console.WriteLine("Qual o tipo da ocorrência?");
@@ -274,6 +278,7 @@ namespace AAS
             Console.WriteLine("6-Assalto");
             Console.WriteLine("7-Agressão");
             Console.WriteLine("8-Ocorrencias Ativas");
+            Console.WriteLine("9-Saber se existe um certo tipo de ocorrencias:");
             Console.WriteLine();
             escolha = Console.ReadLine();
             Console.Clear();
@@ -311,7 +316,20 @@ namespace AAS
                 case "8":
                     MostrarOcorrenciasAtivas();
                     break;
+                case "9":
 
+                    Console.WriteLine("Escolha um tipo de ocorrencia:\n" +
+                        "1-Emergência Médica\n" +
+                        "2-Acidente\n" +
+                        "3-Incêndio Urbano\n" +
+                        "4-Incêndio Florestal\n" +
+                        "5-Incêndio Industrial\n" +
+                        "6-Assalto\n" +
+                        "7-Agressão\n");
+
+                        int tipo_de_Ocorrencia= Convert.ToInt32(Console.ReadLine());
+                        ExibirOcorrenciasPorTipo(tipo_de_Ocorrencia);
+                    break;
                 default:
                     Console.WriteLine("Opção inválida.");
                     Console.Clear();
