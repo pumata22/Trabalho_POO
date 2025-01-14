@@ -10,16 +10,21 @@ namespace AAS
 {
     public abstract class AbstrataVeiculos
     {
+        public string Sigla { get; set; }
+        public int Quantidade { get; set; }
 
-        public virtual void Transporte()
+        public AbstrataVeiculos(string sigla, int quantidade)
         {
-            Console.WriteLine("Veiculos tem um meio de transporte");
+            Sigla = sigla;
+            Quantidade = quantidade;
         }
-        //public  void Mover();
 
-        public virtual void Sigla()
+        // Método abstrato implementado pelas subclasses
+        public abstract string ToString();
+
+        public void MostrarInformacoes()
         {
-            Console.Write("\nOs veiculos tem uma sigla.");
+            Console.WriteLine($"Sigla: {Sigla}, Quantidade: {Quantidade}");
         }
     }
 }

@@ -54,7 +54,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProtecaoCivil.cs" />
     <Compile Include="TipoOcorrencia.cs" />
+    <Compile Include="VeiculoFA.cs" />
+    <Compile Include="VeiculoPC.cs" />
     <Compile Include="Veiculos.cs" />
+    <Compile Include="VeiculosBombeiros.cs" />
+    <Compile Include="VeiculosInem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

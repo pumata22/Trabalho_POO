@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AAS_Aplicação_Atividades_Socorro;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -37,14 +38,29 @@ namespace AAS
         private int qtdMeios;
         private double horaAlerta, horaFecho;
         private double areaArdida;
+        private int qtdVeiculosBomb=10;
+        private int qtdVeiculosInem=10;
+        private int qtdVeiculosFA=10;
+        private int qtdVeiculosPC=10;
         #endregion
 
+        #region Instanciar Listas
         List<Ocorrencia> ocorrenciaList = new List<Ocorrencia>();
+        List<AbstrataVeiculos> veiculosList = new List<AbstrataVeiculos>();
 
         List<Bombeiros> bombeirosList = new List<Bombeiros>();
         List<ForcasArmadas> forcasList = new List<ForcasArmadas>();
         List<Inem> inemList = new List<Inem>();
         List<ProtecaoCivil> pcList = new List<ProtecaoCivil>();
+
+
+        List<VeiculoFA> veiculosFAList = new List<VeiculoFA>();
+        List<VeiculoPC> veiculosPCList = new List<VeiculoPC>();
+        List<VeiculosInem> veiculosInemList = new List<VeiculosInem>();
+        List<VeiculosBombeiros> veiculosBombList = new List<VeiculosBombeiros>();
+        #endregion
+
+        #region Preenchimento Listas
         public List<Bombeiros> AddBombeiros()
         {
             Bombeiros bombeiros = new Bombeiros(0316, "Avenida Carlos Bacelar 106, V.N.Famalicao", 252330200, "B.V.Famalicenses");
@@ -86,6 +102,64 @@ namespace AAS
             return pcList;
         }
 
+        public List<VeiculoFA> AddVeiculoFA() 
+        {
+            VeiculoFA veiculoFA = new VeiculoFA("patrulha", qtdVeiculosFA);
+            veiculosFAList.Add(veiculoFA);
+            return veiculosFAList;
+        }
+        public List<VeiculosBombeiros> AddVeiculoB() 
+        {
+            VeiculosBombeiros veiculoB0 = new VeiculosBombeiros("VFCI", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB1 = new VeiculosBombeiros("VSAE", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB2 = new VeiculosBombeiros("VUCI", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB3 = new VeiculosBombeiros("ABSC", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB4 = new VeiculosBombeiros("VLCI", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB5 = new VeiculosBombeiros("VTTU", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB6 = new VeiculosBombeiros("VALE", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB7 = new VeiculosBombeiros("VTTP", qtdVeiculosBomb);
+            VeiculosBombeiros veiculoB8 = new VeiculosBombeiros("VCOT", qtdVeiculosBomb);
+            veiculosBombList.Add(veiculoB0);
+            veiculosBombList.Add(veiculoB1);
+            veiculosBombList.Add(veiculoB2);
+            veiculosBombList.Add(veiculoB3);
+            veiculosBombList.Add(veiculoB4);
+            veiculosBombList.Add(veiculoB5);
+            veiculosBombList.Add(veiculoB6);
+            veiculosBombList.Add(veiculoB7);
+            veiculosBombList.Add(veiculoB8);
+            return veiculosBombList;
+        }
+        public List<VeiculoPC> AddVeiculoPC() 
+        {
+            VeiculoPC veiculoPC0 = new VeiculoPC("Florestal", qtdVeiculosPC);
+            VeiculoPC veiculoPC1 = new VeiculoPC("Animal", qtdVeiculosPC);
+            veiculosPCList.Add(veiculoPC0);
+            veiculosPCList.Add(veiculoPC1);
+            return veiculosPCList;
+        }
+        public List<VeiculosInem> AddVeiculoInem()
+        {
+            VeiculosInem veiculoINEM0 = new VeiculosInem("SIV", qtdVeiculosInem);
+            VeiculosInem veiculoINEM1 = new VeiculosInem("VMER", qtdVeiculosInem);
+            VeiculosInem veiculoINEM2 = new VeiculosInem("UMIP", qtdVeiculosInem);
+            veiculosInemList.Add(veiculoINEM0);
+            veiculosInemList.Add(veiculoINEM1);
+            veiculosInemList.Add(veiculoINEM2);
+            return veiculosInemList;
+        }
+        #endregion
+
+        public void ExistenciaTipoDeOcorrencia(int tipo_ocorrencia)
+        {
+            var OTaldoTipodeOcorrencia = ocorrenciaList.All(t => t.IdentificadorTipoEmergencia == tipo_ocorrencia);
+
+            Console.WriteLine("True = Sim, False = não", OTaldoTipodeOcorrencia);
+            Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
+            Console.ReadKey();
+            Console.Clear();
+            MENU();
+        }
         public void EmergenciaMedica()
         {
 
@@ -113,7 +187,7 @@ namespace AAS
             Pessoa pessoa = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
 
             Ocorrencia medica = new Ocorrencia(morada, veiculos, observacoes,
-                nVitimas, idade, nOcorrencia, 1, nOperacionais, pessoa);
+                 nVitimas, idade, nOcorrencia, 1, nOperacionais, pessoa);
             ocorrenciaList.Add(medica);
             Console.Clear();
             MENU();
@@ -274,12 +348,12 @@ namespace AAS
             Console.WriteLine("6-Assalto");
             Console.WriteLine("7-Agressão");
             Console.WriteLine("8-Ocorrencias Ativas");
+            Console.WriteLine("9-Saber se existe um certo tipo de ocorrencias?");
             Console.WriteLine();
             escolha = Console.ReadLine();
             Console.Clear();
             switch (escolha)
             {
-
                 case "1":
 
                     EmergenciaMedica();
@@ -308,8 +382,24 @@ namespace AAS
                 case "7":
                     Agressao();
                     break;
+
                 case "8":
                     MostrarOcorrenciasAtivas();
+                    break;
+
+                case "9":
+
+                    Console.WriteLine("Escolha um tipo de ocorrencia:\n" +
+                                        "1-Emergência Médica\n" +
+                                        "2-Acidente\n" +
+                                        "3-Incêndio Urbano\n" +
+                                        "4-Incêndio Florestal\n" +
+                                        "5-Incêndio Industrial\n" +
+                                        "6-Assalto\n" +
+                                        "7-Agressão\n");
+
+                    int tipo_de_Ocorrencia = Convert.ToInt32(Console.ReadLine());
+                    ExistenciaTipoDeOcorrencia(tipo_de_Ocorrencia);
                     break;
 
                 default:
@@ -320,13 +410,11 @@ namespace AAS
             }
 
         }
-
         public List<Ocorrencia> AddOcorrencias()
         {
             MENU();
             return ocorrenciaList;
         }
-
         void setOcorrencias()
         {
             List<string> tipoOcorrencia = new List<string>

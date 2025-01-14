@@ -8,7 +8,12 @@ using System.Threading.Tasks;
 
 namespace AAS
 {
-    public class Veiculos : AbstrataVeiculos,IVeiculos
+    //NAO ESTA A SER USADA
+
+
+
+
+    public class Veiculos
     {
         #region Atributos
         private string sigla; // ligeiro, pesado 

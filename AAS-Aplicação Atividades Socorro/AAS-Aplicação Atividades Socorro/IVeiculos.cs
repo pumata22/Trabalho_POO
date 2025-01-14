@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AAS
 {
-    internal interface IVeiculos
+    public interface IVeiculos
     {
         string TipoVeiculos();
 

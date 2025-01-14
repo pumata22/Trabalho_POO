@@ -26,6 +26,7 @@ namespace AAS
         private double horaAlerta, horaFecho;
         private double areaArdida;
         Pessoa pessoa = new Pessoa();
+        public List<VeiculosBombeiros> veiculosB { get; set; }
         #endregion
 
         #region Construtores
@@ -72,14 +73,14 @@ namespace AAS
             this.veiculos = veiculos;
             this.observacoes = observacoes;
             this.nVitimas = nVitimas;
-            this.nOcorrencia= nOcorrencia;
+            this.nOcorrencia = nOcorrencia;
             this.identificadorTipoEmergencia = identificadorTipoEmergencia;
             this.coordenadas1 = coordenadas1;
             this.coordenadas2 = coordenadas2;
         }
 
         //Construtor incendio florestal
-        public Ocorrencia(string morada, string veiculos, string observacoes,int nOcorrencia,
+        public Ocorrencia(string morada, string veiculos, string observacoes, int nOcorrencia,
                          int identificadorTipoEmergencia, int coordenadas1, int coordenadas2, int nOperacionais, double areaArdida)
         {
             this.morada = morada;
@@ -93,7 +94,7 @@ namespace AAS
         }
 
         //Construtor assalto
-        public Ocorrencia(string morada, string veiculos, string observacoes, int identificadorTipoEmergencia, int nOperacionais,int nOcorrencia,
+        public Ocorrencia(string morada, string veiculos, string observacoes, int identificadorTipoEmergencia, int nOperacionais, int nOcorrencia,
                           int coordenadas1, int coordenadas2)
         {
             this.morada = morada;
@@ -260,15 +261,15 @@ namespace AAS
 
         public double HoraAlerta
         {
-            get 
+            get
             {
-            return this.horaAlerta;
+                return this.horaAlerta;
             }
-            set 
-            { 
-            this.horaAlerta = value;
+            set
+            {
+                this.horaAlerta = value;
             }
-        
+
         }
 
         public double HoraFecho
@@ -308,3 +309,13 @@ namespace AAS
         }
     }
 }
+
+        //public override string ToString()
+        //{
+        //    return $"Ocorrência: {NOcorrencia} - Tipo: {IdentificadorTipoEmergencia}\n" +
+        //           $"Local: {Morada}\n" +
+        //           $"Número de Vítimas: {NVitimas}\n" +
+        //           $"Número de Operacionais: {NOperacionais}\n" +
+        //           $"Observações: {Observacoes}\n" +
+        //           $"Veículos Envolvidos: {veiculosEnvolvidos.Count}\n";
+        //}
