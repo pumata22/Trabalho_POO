@@ -42,6 +42,93 @@ namespace AAS
         private int qtdVeiculosInem=10;
         private int qtdVeiculosFA=10;
         private int qtdVeiculosPC=10;
+        private string arquivoNome;
+        private bool msgErro;
+        #endregion
+
+        #region Persistencia de Dados
+        public Program()
+        {
+            this.arquivoNome = "Lista_Ocorrencias.txt";
+            this.msgErro = true;
+        }
+
+        public bool Gravar(Ocorrencia ocorrencia)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter(this.arquivoNome, true);
+                sw.WriteLine(string.Format("Dados:"));
+                sw.Close();
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+
+                if (msgErro)
+                {
+
+                    Console.WriteLine(ex.Message);
+                }
+
+                return false;
+
+            }
+        }
+
+        public List<string> RetornarValores()
+        {
+            try
+            {
+                StreamReader sr = new StreamReader(this.arquivoNome);
+                List<string> ocorrencias = new List<string>();
+                while (!sr.EndOfStream)
+                {
+                    ocorrencias.Add(sr.ReadLine());
+
+                }
+
+                sr.Close();
+                return ocorrencias;
+            }
+            catch (Exception ex)
+            {
+                if (msgErro)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                return null;
+            }
+        }
+
+        #endregion
+
+        #region exceptions
+        private static void ValidarBombeiros(int id_quartel, int contato)
+        {
+            if (id_quartel < 0 && contato < 0) throw new ExcBombeiros(id_quartel, contato);
+        }
+
+        private static void ValidarInem(int qtdMedicos, int qtdEnfermeiros, int qtdMeios)
+        {
+            if (qtdMedicos < 0 && qtdEnfermeiros < 0 && qtdMeios < 0) throw new ExcInem(qtdMedicos, qtdEnfermeiros, qtdMeios);
+        }
+
+        private static void ValidarOcorrenciaMedicaAgressao(int nVitimas, int idade)
+        {
+            if (nVitimas < 0 && idade < 0) throw new ExcOcorrencia(nVitimas, idade);
+        }
+
+        private static void ValidarOcorrenciaAcidente(int nVitimas)
+        {
+            if (nVitimas < 0) throw new ExcOcorrencia(nVitimas);
+        }
+        private static void ValidarOcorrenciaIncendios(int nVitimas)
+        {
+            if (nVitimas < 0) throw new ExcOcorrencia(nVitimas);
+        }
+
         #endregion
 
         #region Instanciar Listas
@@ -66,6 +153,19 @@ namespace AAS
             Bombeiros bombeiros = new Bombeiros(0316, "Avenida Carlos Bacelar 106, V.N.Famalicao", 252330200, "B.V.Famalicenses");
             Bombeiros bombeiros1 = new Bombeiros(0308, "Av. Rebelo Mesquita 136, V.N.Famalicao", 252301112, "B.V.Famalicao");
             Bombeiros bombeiros2 = new Bombeiros(0319, "Avenida Cidade Abreu e Lima, Riba de Ave,", 252900200, "B.V.Riba de Ave");
+
+            try
+            {
+                ValidarBombeiros(bombeiros.IdQuartel, bombeiros.Contacto);
+                ValidarBombeiros(bombeiros1.IdQuartel, bombeiros2.Contacto);
+                ValidarBombeiros(bombeiros2.IdQuartel, bombeiros2.Contacto);
+            }
+            catch (ExcBombeiros e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
             bombeirosList.Add(bombeiros);
             bombeirosList.Add(bombeiros1);
             bombeirosList.Add(bombeiros2);
@@ -86,6 +186,18 @@ namespace AAS
             Inem inem = new Inem(1, 1, 1, "Famalicao");
             Inem inem1 = new Inem(1, 1, 1, "Barcelos");
             Inem inem2 = new Inem(1, 1, 1, "Braga");
+
+            try
+            {
+                ValidarInem(inem.QtdMedicos, inem.QtdEnfermeiros, inem.QtdMeios);
+                ValidarInem(inem1.QtdMedicos, inem1.QtdEnfermeiros, inem1.QtdMeios);
+                ValidarInem(inem2.QtdMedicos, inem2.QtdEnfermeiros, inem2.QtdMeios);
+            }
+            catch (ExcInem e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             inemList.Add(inem);
             inemList.Add(inem1);
             inemList.Add(inem2);
@@ -150,16 +262,7 @@ namespace AAS
         }
         #endregion
 
-        public void ExistenciaTipoDeOcorrencia(int tipo_ocorrencia)
-        {
-            var OTaldoTipodeOcorrencia = ocorrenciaList.All(t => t.IdentificadorTipoEmergencia == tipo_ocorrencia);
 
-            Console.WriteLine("True = Sim, False = não", OTaldoTipodeOcorrencia);
-            Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
-            Console.ReadKey();
-            Console.Clear();
-            MENU();
-        }
         public void EmergenciaMedica()
         {
 
@@ -188,6 +291,17 @@ namespace AAS
 
             Ocorrencia medica = new Ocorrencia(morada, veiculos, observacoes,
                  nVitimas, idade, nOcorrencia, 1, nOperacionais, pessoa);
+
+            try
+            {
+                ValidarOcorrenciaMedicaAgressao(medica.NVitimas, medica.Idade);
+
+            }
+            catch (ExcOcorrencia e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             ocorrenciaList.Add(medica);
             Console.Clear();
             MENU();
@@ -207,6 +321,16 @@ namespace AAS
             Ocorrencia acidente = new Ocorrencia(morada, veiculos, observacoes,
           nVitimas, nOcorrencia, 2, coordenadas1, coordenadas2, nOperacionais,
           pessoa1);
+
+            try
+            {
+                ValidarOcorrenciaAcidente(acidente.NVitimas);
+            }
+            catch (ExcOcorrencia e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             ocorrenciaList.Add(acidente);
             Console.Clear();
             MENU();
@@ -225,6 +349,17 @@ namespace AAS
             Console.WriteLine("Incêndio Urbano");
             Ocorrencia urbano = new Ocorrencia(morada, veiculos, observacoes, nOcorrencia,
             nVitimas, 3, coordenadas1, coordenadas2, nOperacionais);
+
+            try
+            {
+                ValidarOcorrenciaIncendios(urbano.NVitimas);
+
+            }
+            catch (ExcOcorrencia e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             ocorrenciaList.Add(urbano);
             Console.Clear();
             MENU();
@@ -241,6 +376,7 @@ namespace AAS
 
             Ocorrencia florestal = new Ocorrencia(morada, veiculos, observacoes, nOcorrencia,
                 4, coordenadas1, coordenadas2, nOperacionais, areaArdida);
+
             ocorrenciaList.Add(florestal);
             Console.Clear();
             MENU();
@@ -261,6 +397,17 @@ namespace AAS
 
             Ocorrencia industrial = new Ocorrencia(morada, veiculos, observacoes, nOcorrencia,
                  nVitimas, 5, coordenadas1, coordenadas2, nOperacionais);
+
+            try
+            {
+                ValidarOcorrenciaMedicaAgressao(agressao.NVitimas, agressao.Idade);
+
+            }
+            catch (ExcOcorrencia e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             ocorrenciaList.Add(industrial);
             Console.Clear();
             MENU();
@@ -311,6 +458,16 @@ namespace AAS
             Pessoa pessoa7 = new Pessoa(nome, idade, dataNascimento, sexo, moradaPessoa);
             Ocorrencia agressao = new Ocorrencia(morada, veiculos, observacoes, nOcorrencia,
                nVitimas, idade, nOcorrencia, 7, nOperacionais, pessoa7);
+            try
+            {
+                ValidarOcorrenciaMedicaAgressao(agressao.NVitimas, agressao.Idade);
+
+            }
+            catch (ExcOcorrencia e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             ocorrenciaList.Add(agressao);
             Console.Clear();
             MENU();
